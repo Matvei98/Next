@@ -12,9 +12,11 @@ async function getData(id:string) {
 
 
 type Props = {
-params:{
-id:string;
-}
+
+	params:{
+	 id:string;
+	}
+
 }
 	
 
@@ -33,7 +35,7 @@ export default async function Post({params:{ id } }:Props) {
   return (
 	<>	
     <h1>Post page {post.title}</h1>
-	<p>{post.body}</p>	
+	  <p>{post.body}</p>	
 	</>
   )
 }
